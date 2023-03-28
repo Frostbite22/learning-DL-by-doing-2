@@ -8,6 +8,7 @@ It is a very good practice to test out the state of art models and adapt them to
 ### Finetuning the convnet
 Load a pretrained model and reset final fully connected layer.
 ### ConvNet as fixed feature extractor
-Here, we need to freeze all the network except the final layer. We need to set ''' requires_grad = False ''' to freeze the parameters so that the gradients are not computed in '''backward()'''.
+Here, we need to freeze all the network except the final layer. We need to set ``` requires_grad = False ``` to freeze the parameters so that the gradients are not computed in ```backward()```.
+[For more details](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)
 
 
